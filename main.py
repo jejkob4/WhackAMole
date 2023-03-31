@@ -4,7 +4,9 @@ import random
 import music
 
 # jednou (bez mezer bo to jebe kod do pici)
-display.scroll('WAM!')
+display.scroll('Whack A Mole!')
+display.scroll('Press logo to play!')
+music.play(music.FUNK)        
 
 buttonA = Image('00700:'
                 '09000:'
@@ -36,7 +38,7 @@ def odpocet_3():
 
 def success_press():
             display.clear()
-            display.show(Image.SKULL)
+            display.show(Image.YES)
             time.sleep(2)
             display.clear()
     
@@ -44,19 +46,19 @@ def show_directions(img):
     display.show(img)
     time.sleep(2)
 
+#variables
 count = 0
 
+   
 #pořád
 while True:
-    display.scroll('Press logo to start!')
-    music.play(music.ODE)
 # game start (je to take dojebane no, delay je tu na picu)
 # musis zmacknut logo
     if pin_logo.is_touched():
         while (count <3): 
             count = count + 1
             
-            display.show(Image.HEART)
+            display.show(Image.SKULL)
             time.sleep(1)
             display.clear()
             time.sleep(1)
@@ -75,4 +77,4 @@ while True:
             if x.was_pressed():
                 success_press()
         else:
-            game_over(endgame)
+            game_over(endgame) 
