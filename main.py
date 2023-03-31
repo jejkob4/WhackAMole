@@ -28,7 +28,7 @@ element_list = [button_a, button_b]
 def game_over(end):
     display.scroll(end)   
 
-def odpocet_3():
+def timer_3():
         display.show('3')
         time.sleep(1)
         display.show('2')
@@ -72,7 +72,7 @@ while True:
                 y = buttonB
                 show_directions(y)
             
-            odpocet_3()
+            timer_3()
         
             if x.was_pressed():
                 success_press()
