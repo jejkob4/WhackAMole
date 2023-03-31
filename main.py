@@ -3,10 +3,12 @@ import time
 import random
 import music
 
+# startovací sekvence
 display.scroll('Whack A Mole!')
 display.scroll('Press logo to play!')
 music.play(music.FUNK)        
 
+# imgs + endgame
 buttonA = Image('00700:'
                 '09000:'
                 '99987:'
@@ -21,9 +23,10 @@ buttonB = Image('00700:'
 
 endgame = ('Game Over!')
 
+# random list
 element_list = [button_a, button_b]
        
-
+# definice
 def game_over(end):
     display.scroll(end)   
 
@@ -45,7 +48,7 @@ def show_directions(img):
     display.show(img)
     time.sleep(2)
 
-#variables
+#variably pro loop
 count = 0
 
    
