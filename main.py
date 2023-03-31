@@ -13,7 +13,8 @@ endgame = ('Game Over!')
 display.scroll('Whack A Mole!')
 def start_game(ximage):
     display.show(ximage)
-#    if button_a
+#    elif button_a ....
+#    else game_over(endgame)
    
 def game_over(end):
     display.scroll(end)    
