@@ -3,7 +3,6 @@ import time
 import random
 import music
 
-# jednou (bez mezer bo to jebe kod do pici)
 display.scroll('Whack A Mole!')
 display.scroll('Press logo to play!')
 music.play(music.FUNK)        
@@ -52,8 +51,6 @@ count = 0
    
 #pořád
 while True:
-# game start (je to take dojebane no, delay je tu na picu)
-# musis zmacknut logo
     if pin_logo.is_touched():
         while (count <3): 
             count = count + 1
